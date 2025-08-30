@@ -1,6 +1,6 @@
 # Resume Parser & Job Matching
 
-A simple web-based application that allows users to upload resumes and match them with job descriptions to find the best skill match. Built using **Flask**, **Pandas**, and **basic file handling techniques (no NLP used)**.
+A simple web-based application that allows users to upload resumes and match them with job descriptions to find the best skill match. Built using **Flask**, **Pandas**, and **basic file handling techniques**.
 
 ---
 
