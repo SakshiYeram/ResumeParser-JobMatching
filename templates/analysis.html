@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='analysis.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Resume Parser</div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Upload</a></li>
+        <li><a class="active" href="{{ url_for('analysis_page') }}">Analysis</a></li>
+        <li><a href="{{ url_for('ranking_page') }}">Ranking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="analysis-container">
+    <h2>Analysis Result</h2>
+    <div class="result-box">
+      <h3>Job Title: {{ job_title }}</h3>
+      <p><strong>Score:</strong> {{ score }}%</p>
+      <h4>Skills Detected:</h4>
+      <ul>
+        {% for skill in skills_detected %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+
+      <h4>Missing (Required):</h4>
+      <ul>
+        {% for skill in missing_required %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="btn-group">
+      <a href="{{ url_for('ranking_page') }}" class="btn">View Ranking</a>
+      <a href="{{ url_for('home') }}" class="btn secondary">Upload Another</a>
+    </div>
+  </div>
+
+</body>
+</html>

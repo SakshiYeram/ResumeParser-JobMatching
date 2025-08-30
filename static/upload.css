@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url("https://www.modern.place/wp-content/uploads/2023/05/lighting-standards-for-offices-2.png")
+  no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 8px 14px;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #007BFF;
+}
+
+.upload-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  text-align: center;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.file-input {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px dashed #6c63ff;
+  border-radius: 12px;
+  background: #f9f9ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-input:hover {
+  background: #ecebff;
+  border-color: #4b47ff;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  display: block;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6c63ff, #4b47ff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #4b47ff, #2e29cc);
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(76, 72, 255, 0.4);
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}

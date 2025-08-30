@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Upload Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Resume Parser and Job Matching</div>
+    <nav>
+      <ul>
+        <li><a class="active" href="{{ url_for('home') }}">Upload</a></li>
+        <li><a href="{{ url_for('analysis_page') }}">Analysis</a></li>
+        <li><a href="{{ url_for('ranking_page') }}">Ranking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Upload Section -->
+  <div class="upload-container">
+    <h2>Upload Your Resume</h2>
+    <form action="{{ url_for('upload_resume') }}" method="post" enctype="multipart/form-data">
+  <div class="file-input">
+    <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+    <label for="resume">📄 Choose your resume file</label>
+  </div>
+  <button type="submit" class="btn">Upload</button>
+  <p class="note">Accepted formats: PDF, DOC, DOCX</p>
+</form>
+ 
+  </div>
+
+</body>
+</html>

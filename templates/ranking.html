@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Ranking</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='ranking.css') }}">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Resume Parser</div>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Upload</a></li>
+        <li><a href="{{ url_for('analysis_page') }}">Analysis</a></li>
+        <li><a class="active" href="{{ url_for('ranking_page') }}">Ranking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="ranking-container">
+    <h2>Resume Ranking</h2>
+    <table class="ranking-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Candidate Name</th>
+          <th>Job Title</th>
+          <th>Score</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in ranking_data %}
+        <tr>
+          <td>{{ loop.index }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.job_title }}</td>
+          <td>{{ item.score }}%</td>
+          <td>
+  <form action="{{ url_for('delete_resume', resume_filename=item.resume_filename) }}" method="post" style="display:inline;">
+    <button type="submit" class="btn" onclick="return confirm('Are you sure you want to delete this resume?');">Delete</button>
+        </form>
+         </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
