@@ -30,6 +30,7 @@ How it Works:
 4. Show match % + matched/missing skills
 
 Tech Stack:
+
 1)Python
 
 2)Flask 
@@ -41,6 +42,7 @@ Tech Stack:
 5)HTML/CSS
 
 Future Enhancements:
+
 ✨Upload custom job descriptions
 
 ✨Multi-role matching
