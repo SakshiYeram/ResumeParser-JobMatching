@@ -31,14 +31,22 @@ How it Works:
 
 Tech Stack:
 1)Python
+
 2)Flask 
+
 3)Pandas
+
 4)PDFMiner
+
 5)HTML/CSS
 
 Future Enhancements:
 ✨Upload custom job descriptions
+
 ✨Multi-role matching
+
 ✨NLP improvements
+
 ✨Login/dashboard
+
 ✨DOCX support
