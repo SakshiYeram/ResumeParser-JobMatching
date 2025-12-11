@@ -1,114 +1,96 @@
-🌟 Resume Parser & Job Matching System
+# ðŸŒŸ Resume Parser & Job Matching System
 
-A smart, lightweight web application that extracts skills from a resume, compares them with a predefined technical job skills dataset, and generates a match score.
-Built using Flask, Pandas, and PDF parsing techniques.
+A smart, lightweight web application that **extracts skills from a
+resume**, compares them with a **predefined technical job skills
+dataset**, and generates a **match score**.\
+Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
+------------------------------------------------------------------------
 
----
+## ðŸš€ Features
 
-🚀 Features
+âœ” Upload **Resume (PDF)**\
+âœ” Predefined **Job Skills CSV** (no user upload needed)\
+âœ” Automatic **Skill Extraction & Matching**\
+âœ” Displays **Match Percentage + Matched & Missing Skills**\
+âœ” Clean and intuitive **Flask-based Web UI**
 
-✔ Upload Resume (PDF)
-✔ Predefined Job Skills CSV (no user upload needed)
-✔ Automatic Skill Extraction & Matching
-✔ Displays Match Percentage + Matched & Missing Skills
-✔ Clean and intuitive Flask-based Web UI
+------------------------------------------------------------------------
 
+## ðŸ—‚ï¸ Project Structure
 
----
+    ResumeParser-JobMatching/
+    â”‚
+    â”œâ”€â”€ app.py               # Main Flask application
+    â”œâ”€â”€ matcher.py           # Core logic for skill matching
+    â”œâ”€â”€ job_skills.csv       # Combined job skills dataset
+    â”œâ”€â”€ project.sql          # (Optional) database file
+    â”œâ”€â”€ static/              # CSS, JS, images
+    â”œâ”€â”€ templates/           # HTML templates
+    â”œâ”€â”€ .gitignore           
+    â””â”€â”€ README.md
 
-🗂️ Project Structure
+------------------------------------------------------------------------
 
-ResumeParser-JobMatching/
-│
-├── app.py               # Main Flask application
-├── matcher.py           # Core logic for skill matching
-├── job_skills.csv       # Combined job skills dataset
-├── project.sql          # (Optional) database file
-├── static/              # CSS, JS, images
-├── templates/           # HTML templates
-├── .gitignore           
-└── README.md
+## âš™ï¸ Installation & Setup
 
+### 1. Clone the Repository
 
----
+    git clone https://github.com/YourUsername/ResumeParser-JobMatching.git
+    cd ResumeParser-JobMatching
 
-⚙️ Installation & Setup
+### 2. (Optional) Create a Virtual Environment
 
-1. Clone the Repository
+    python -m venv venv
+    source venv/bin/activate    # Mac/Linux
+    venv\Scripts\activate       # Windows
 
-git clone https://github.com/YourUsername/ResumeParser-JobMatching.git
-cd ResumeParser-JobMatching
+### 3. Install Dependencies
 
-2. (Optional) Create a Virtual Environment
+    pip install flask pandas pdfminer.six
 
-python -m venv venv
-source venv/bin/activate    # Mac/Linux
-venv\Scripts\activate       # Windows
+### 4. Run the Application
 
-3. Install Dependencies
+    python app.py
 
-pip install flask pandas pdfminer.six
+### 5. Open in Browser
 
-4. Run the Application
+    http://127.0.0.1:5000/
 
-python app.py
+------------------------------------------------------------------------
 
-5. Open in Browser
+## ðŸŽ¯ How the System Works
 
-http://127.0.0.1:5000/
+1.  Upload your **Resume (PDF)**\
+2.  System extracts skills\
+3.  Compares with built-in **job_skills.csv**\
+4.  Shows:
+    -   âœ” Matched Skills\
+    -   âœ” Missing Skills\
+    -   âœ” Match Percentage
 
+------------------------------------------------------------------------
 
----
+## ðŸ“Œ Tech Stack
 
-🎯 How the System Works
+-   Python\
+-   Flask\
+-   Pandas\
+-   PDFMiner\
+-   HTML / CSS
 
-1. Upload your Resume (PDF)
+------------------------------------------------------------------------
 
+## ðŸ”® Future Enhancements
 
-2. The system extracts skills from the resume
+âœ¨ Allow uploading custom job descriptions\
+âœ¨ Multi-role job matching\
+âœ¨ Improved NLP skill extraction\
+âœ¨ Login & dashboard\
+âœ¨ DOCX resume support
 
+------------------------------------------------------------------------
 
-3. It compares them with the built-in technical job skills dataset (job_skills.csv)
+## ðŸ™Œ Contributions
 
-
-4. The website shows:
-
-✔ Matched Skills
-
-✔ Missing Skills
-
-✔ Match Percentage
-
-
-
-
-This makes the process easy for the user — no need to upload a job description file.
-
-
----
-
-📌 Tech Stack
-
-Python
-
-Flask
-
-Pandas
-
-PDFMiner
-
-HTML / CSS
-
-
-
----
-
-🔮 Future Enhancements
-
-✨ Allow users to upload custom job descriptions
-✨ Add multiple job-role matching
-✨ Improve NLP-based skill extraction
-✨ Add login & dashboard
-✨ Support DOCX files
-
+Pull requests and issues are welcome!
