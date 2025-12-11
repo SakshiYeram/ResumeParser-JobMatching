@@ -1,78 +1,114 @@
-# Resume Parser & Job Matching
+🌟 Resume Parser & Job Matching System
 
-A simple web-based application that allows users to upload resumes and match them with job descriptions to find the best skill match. Built using **Flask**, **Pandas**, and **basic file handling techniques**.
+A smart, lightweight web application that extracts skills from a resume, compares them with a predefined technical job skills dataset, and generates a match score.
+Built using Flask, Pandas, and PDF parsing techniques.
 
----
-
-## Features
-- Upload **resume (PDF)** and **job description (CSV)**  
-- Extract and compare skills  
-- Display match percentage  
-- Interactive web interface using Flask  
 
 ---
 
-## Project Structure
-```
+🚀 Features
+
+✔ Upload Resume (PDF)
+✔ Predefined Job Skills CSV (no user upload needed)
+✔ Automatic Skill Extraction & Matching
+✔ Displays Match Percentage + Matched & Missing Skills
+✔ Clean and intuitive Flask-based Web UI
+
+
+---
+
+🗂️ Project Structure
+
 ResumeParser-JobMatching/
 │
 ├── app.py               # Main Flask application
 ├── matcher.py           # Core logic for skill matching
-├── project.sql          # Database file (if used)
-├── job_skills.csv       # Sample job skills dataset
-├── static/              # CSS, JS, and images
+├── job_skills.csv       # Combined job skills dataset
+├── project.sql          # (Optional) database file
+├── static/              # CSS, JS, images
 ├── templates/           # HTML templates
-├── .gitignore           # Ignore unnecessary files
-└── README.md            # Project documentation
-```
+├── .gitignore           
+└── README.md
+
 
 ---
 
-## Installation and Setup
+⚙️ Installation & Setup
 
-### 1. Clone the Repository
-```bash
+1. Clone the Repository
+
 git clone https://github.com/YourUsername/ResumeParser-JobMatching.git
 cd ResumeParser-JobMatching
-```
 
-### 2. (Optional) Create a Virtual Environment
-```bash
+2. (Optional) Create a Virtual Environment
+
 python -m venv venv
-source venv/bin/activate    # For Linux/Mac
-venv\Scripts\activate       # For Windows
-```
+source venv/bin/activate    # Mac/Linux
+venv\Scripts\activate       # Windows
 
-### 3. Install Required Dependencies
-```bash
+3. Install Dependencies
+
 pip install flask pandas pdfminer.six
-```
 
-### 4. Run the Application
-```bash
+4. Run the Application
+
 python app.py
-```
 
-### 5. Access the Application
-Open your browser and go to:  
-```
+5. Open in Browser
+
 http://127.0.0.1:5000/
-```
+
 
 ---
 
-## Usage
-- Upload your **resume (PDF)**.  
-- Upload the **job description (CSV)**.  
-- View the matched skills and match percentage.  
+🎯 How the System Works
+
+1. Upload your Resume (PDF)
+
+
+2. The system extracts skills from the resume
+
+
+3. It compares them with the built-in technical job skills dataset (job_skills.csv)
+
+
+4. The website shows:
+
+✔ Matched Skills
+
+✔ Missing Skills
+
+✔ Match Percentage
+
+
+
+
+This makes the process easy for the user — no need to upload a job description file.
+
 
 ---
 
-## Future Enhancements
-- Add user login/signup  
-- Improve matching algorithm  
-- Store matches in a database  
-- Support multiple job postings  
+📌 Tech Stack
+
+Python
+
+Flask
+
+Pandas
+
+PDFMiner
+
+HTML / CSS
+
+
 
 ---
+
+🔮 Future Enhancements
+
+✨ Allow users to upload custom job descriptions
+✨ Add multiple job-role matching
+✨ Improve NLP-based skill extraction
+✨ Add login & dashboard
+✨ Support DOCX files
 
