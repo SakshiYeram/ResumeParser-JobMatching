@@ -1,4 +1,4 @@
-# ðŸŒŸ Resume Parser & Job Matching System
+#  Resume Parser & Job Matching System
 
 A smart, lightweight web application that **extracts skills from a
 resume**, compares them with a **predefined technical job skills
@@ -7,7 +7,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸš€ Features
+## Features
 
 âœ” Upload **Resume (PDF)**\
 âœ” Predefined **Job Skills CSV** (no user upload needed)\
@@ -17,7 +17,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸ—‚ï¸ Project Structure
+## Project Structure
 
     ResumeParser-JobMatching/
     â”‚
@@ -32,7 +32,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## âš™ï¸ Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -59,7 +59,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸŽ¯ How the System Works
+##  How the System Works
 
 1.  Upload your **Resume (PDF)**\
 2.  System extracts skills\
@@ -71,7 +71,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸ“Œ Tech Stack
+##  Tech Stack
 
 -   Python\
 -   Flask\
@@ -81,7 +81,7 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸ”® Future Enhancements
+##  Future Enhancements
 
 âœ¨ Allow uploading custom job descriptions\
 âœ¨ Multi-role job matching\
@@ -91,6 +91,6 @@ Built using **Flask**, **Pandas**, and **PDF parsing techniques**.
 
 ------------------------------------------------------------------------
 
-## ðŸ™Œ Contributions
+##  Contributions
 
 Pull requests and issues are welcome!
